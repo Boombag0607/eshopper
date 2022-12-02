@@ -154,75 +154,65 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid bg-secondary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-            <h1 class="font-weight-semi-bold text-uppercase mb-3">Contact Us</h1>
-            <div class="d-inline-flex">
-                <p class="m-0"><a href="">Home</a></p>
-                <p class="m-0 px-2">-</p>
-                <p class="m-0">Contact</p>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
     <!-- Contact Start -->
     <div class="container-fluid pt-5">
         <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Contact For Any Queries</span></h2>
+            <h2 class="section-title px-5"><span class="px-2">Change Item Details</span></h2>
         </div>
         <div class="row px-xl-5">
-            <div class="col-lg-7 mb-5">
-                <div class="contact-form">
+            <div class="col-lg-12 mb-5">
+                <div class="item-details-form">
                     <div id="success"></div>
                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
                         <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                required="required" data-validation-required-message="Please enter your name" />
+                            <input type="text" class="form-control" id="name" placeholder="ID Number"
+                                required="required" data-validation-required-message="Please enter the ID number" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                required="required" data-validation-required-message="Please enter your email" />
+                            <input type="number" class="form-control" id="email" placeholder="Quantity"
+                                required="required" data-validation-required-message="Please the current quantity available" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="6" id="message" placeholder="Message"
+                            <input type="number" class="form-control" id="message" placeholder="Price"
                                 required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
+                                data-validation-required-message="Please enter the price"/>
                             <p class="help-block text-danger"></p>
                         </div>
+                        <div class="control-group">
+                            <input type="date" class="form-control" id="message" placeholder="Delivery date"
+                                required="required"
+                                data-validation-required-message="Please enter the delivery date"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <br>
+                        <div class="control-group">
+                            <label style="color:black;" for="stock">Change Availability:</label>
+                            <select name="stock" id="stock" class="ml-4">
+                                <option value="in">In Stock</option>
+                                <option value="out">Out of Stock</option>
+                            </select>
+                        </div>
+                        <br>
                         <div>
-                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Send
-                                Message</button>
+                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Change</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="col-lg-5 mb-5">
-                <h5 class="font-weight-semi-bold mb-2">Get In Touch</h5>
-                <p>This is for the group project by Group No. 50 (Ananya Gautam, Shikhar Sachan, Shashwat Tripathi, Mudit Shrivastav, Samyak Paharia and Rishabh Khandelwal) of the course of Object Oriented Programming in the University of Birla Intitute of Pilani, Hyderabad Campus. </p>
-                <div class="col-lg-11 mb-5">
-                    <div class="d-flex flex-column mb-3">
-                        <h5 class="font-weight-semi-bold mb-3">Store 1</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Ananya Enterprises, Wahsington Avenue, New York</p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>ananyagautam0607@gmail.com</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 941 362 2366</p>
-                    </div>
-                    <div class="d-flex flex-column">
-                        <h5 class="font-weight-semi-bold mb-3">Store 2</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Boombag Enterprises, Andheri, Mumbai</p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>ananyagautam0607@gmail.com</p>
-                        <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 941 362 2366</p>
-                    </div>
+                <div class="d-flex flex-column mb-3">
+                    <h5 class="font-weight-semi-bold mb-3">Store 1</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Ananya Enterprises, Wahsington Avenue, New York</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>ananyagautam0607@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 941 362 2366</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <h5 class="font-weight-semi-bold mb-3">Store 2</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Boombag Enterprises, Andheri, Mumbai</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>ananyagautam0607@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 941 362 2366</p>
                 </div>
             </div>
         </div>
@@ -237,7 +227,7 @@
                 <a href="" class="text-decoration-none">
                     <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">E</span>Shopper</h1>
                 </a>
-                <p>This is for the group project by Group No. 50 (Ananya Gautam, Shikhar Sachan, Shashwat Tripathi, Mudit Shrivastav, Samyak Paharia and Rishabh Khandelwal) of the course of Object Oriented Programming in the University of Birla Intitute of Pilani, Hyderabad Campus. </p>
+                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
                 <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
@@ -289,7 +279,7 @@
                 <p class="mb-md-0 text-center text-md-left text-dark">
                     &copy; <a class="text-dark font-weight-semi-bold" href="#">Eshopper</a>. All Rights Reserved. Designed
                     by
-                    <a class="text-dark font-weight-semi-bold" href="https://boombag0607.github.io">Ananya Gautam</a><br>
+                    <a class="text-dark font-weight-semi-bold" href="https://https://boombag0607.github.io">Ananya Gautam</a><br>
                     Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                 </p>
             </div>
